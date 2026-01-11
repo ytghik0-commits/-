@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Flow | مساحة التركيز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>مساحة التركيز 🧘‍♂️</h1>
+        
+        <div class="timer-display" id="timer">25:00</div>
+        <div class="controls">
+            <button id="start">ابدأ</button>
+            <button id="reset">إعادة ضبط</button>
+        </div>
+
+        <hr>
+
+        <div class="sounds">
+            <h3>أصوات مريحة</h3>
+            <button onclick="playTone('rain')">🌧️ مطر</button>
+            <button onclick="playTone('forest')">🌲 غابة</button>
+            <button onclick="stopSounds()">🔇 إيقاف</button>
+        </div>
+    </div>
+
+    <audio id="rain-sound" loop src="https://www.soundjay.com/nature/rain-01.mp3"></audio>
+    <audio id="forest-sound" loop src="https://www.soundjay.com/nature/forest-1.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
